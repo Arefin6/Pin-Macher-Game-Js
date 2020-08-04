@@ -32,5 +32,14 @@ let numBtns = document.getElementsByClassName("number");
          }
 
     });
+    document.getElementById("clear").addEventListener("click",function(){
+        document.getElementById("number-input").value ="";
+        result = [];   
+    });
+    document.getElementById("back-space").addEventListener("click",function(){
+       var value = document.getElementById("number-input").value;
+       document.getElementById("number-input").value = value.substr(0, value.length - 1); 
+       result=[];
+    });
      
 
